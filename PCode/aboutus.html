@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="/style_aboutus.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: url("/imgs/background03.jpg");
+  background-size: contain;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: center;
+  width: 23.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align-last: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+    height: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: dimgrey;
+  color: white;
+  margin-top: 90px;
+}
+
+.container {
+  padding: 0 16px;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: inline-grid;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: inline-block;
+  }
+}
+img {
+    overflow: hidden;
+}
+    </style>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="https://www.linkpicture.com/q/logo_final_1.png" width="60" height="60" class="d-inline-block align-top" alt="logo">
+        <h1 class="d-inline-block align-top" style="font-size: 1.5rem; padding-top: 15px; color: #120078">PORTFOLIO WEBSITE GENERATOR</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/">Home</a></li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/#templates">Templates</a></li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000/login">Login/Register</a></li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/#contact">Contact Us</a></li> 
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a></li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="frontpage.html">Logout</a></li> -->
+        </ul>
+        </div>
+        </nav>
+        
+        <div class="about-section">
+          <h1 style="font-family: 'Roboto', cursive">About Us Page</h1>
+          <p style="font-family: 'Raleway', sans-serif">Some text about who we are and what we do!</p>
+        </div>
+
+          <h2 style="text-align:center; padding: 50px; font-family: 'Roboto', cursive; color: azure;">Our Team</h2>
+        <div class="row">
+        <div class="column" style="margin-left: 45px;">
+        <div class="card">
+          <img src="https://www.linkpicture.com/q/shankar.jpeg" alt="Shankar" style="width:100%">
+        <div class="container">
+        <h2 style="font-family: 'Dancing Script', cursive">Shankar Gangwani</h2>
+        <p class="title">Backend Developer</p>
+        <p></p>
+        <p></p>
+        <p><button class="button"><a style="color: white;" href="https://www.linkedin.com/in/shankar-gangwani-371518149?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3AXgU4kbSf%2B3AzX%2BYJT4wA%3D%3D">Contact</a></button></p>
+        </div>
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="card">
+          <img src="https://www.linkpicture.com/q/priyanka_1.jpeg" alt="Priyanka" style="width:100%">
+        <div class="container">
+            <h2 style="font-family: 'Dancing Script', cursive;">Priyanka<span style="display: block">Khadse</span></h2>
+          <p class="title">Backend Developer</p>
+          <p></p>
+          <p></p>
+          <p><button class="button"><a style="color: white;" href="https://www.linkedin.com/in/priyanka-khadse-015a2b1a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpPbTcg21S7WK%2FwYzZeYDJQ%3D%3D">Contact</a></button></p>
+       </div>
+       </div>
+       </div>
+            
+            
+       <div class="column">
+       <div class="card">
+          <img src="https://www.linkpicture.com/q/tejas.jpeg" alt="Tejas" style="width:100%">
+       <div class="container">
+          <h2 style="font-family: 'Dancing Script', cursive">Tejas <span style="display: block">Gupta</span></h2>
+          <p class="title">Frontend Developer</p>
+          <p></p>
+          <p></p>
+          <p><button type="submit" class="button"><a style="color: white;" href="https://www.linkedin.com/in/tejas-gupta-9b20731a5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUboaEWEFTIOjpghkUCr34w%3D%3D">Contact</a></button>
+       </div>
+       </div>
+       </div>
+            
+        <div class="column">
+        <div class="card">
+          <img src="https://www.linkpicture.com/q/sanskriti_1.jpg" alt="Sanskriti" style="width:100%">
+       <div class="container">
+          <h2 style="font-family: 'Dancing Script', cursive">Sanskriti Shevgaonkar</h2>
+          <p class="title">Frontend Developer</p>
+          <p></p>
+          <p></p>
+          <p><button  class="button"><a style="color: white;" href="https://www.linkedin.com/in/sanskriti-shevgaonkar-2738b81a5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3HwNSEieQ0%2BCg0TIoTxGDw%3D%3D">Contact</a></button></p>
+       </div>
+       </div>
+       </div>
+       </div>
+       
+        
+        
+    </body>
+</html>

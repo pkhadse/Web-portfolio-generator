@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>portfolio details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div style="background-color: rgba(0, 0,0 ,0.2);" class="form-box">
+        
+        <div class="heading">
+            <h2><b>PORTFOLIO DETAILS</b></h2>
+        </div>
+        <p>*fill the details carefully.</p>
+       
+        <form style="background-color: transparent; " action="/" method="POST" class="input-group">
+          <div class="name">
+            <label for="firstname"> Name:</label>
+            <input type="text" id="fname" placeholder="" name="name">
+            <!-- <label for="pwd" id="lnamelabel">Last Name:</label>
+            <input type="text" id="lname" placeholder="" name="pswd"> -->
+          </div>
+            <label >Education:</label>
+            <input type="text" id="Education" name="education"  placeholder="" ><br>
+            <label for="exp">Experience:</label>
+            <input type="text" id="exp" name="experience"><br>
+            <!-- <label for="exp">Certificate:</label>
+            <input type="file" id="exp-img" name="exp-img" multiple><br>
+            <div id="multiproject"> -->
+              <label for="project">Projects:</label>
+              <input type="text"  name="projects" id="multiprojectdiv"><br><br>
+              <!-- <button type="button" class="add">Add</button>
+              <button type="button" class="remove">Remove</button> -->
+
+            </div> 
+            <div id="multiskill"> 
+             <label for="skills">skills:</label>
+             <input type="text"  name="skills" id="multiskilldiv" ><br><br>
+             <button type="button" class="add1">Add</button>
+             <button type="button" class="remove1">Remove</button>
+            </div> 
+             <label for="tagline">Tag-line:</label>
+            <input type="text" id="tagline" name="tagline"><br>
+            <label for="summary">Summary:</label>
+            <input type="text" id="summary" name="summary"><br>
+            <label for="social-media" id="socialmedia">Social-media:</label>
+            <!-- <input type="email" id="Email" name="email" placeholder="Email"><br> -->
+            <input type="text" id="linkedin" name="linkedin" placeholder="linkedin"><br>
+            <input type="text" id="github" name="github" placeholder="Github"><br>
+            <input type="text" id="twitter" name="twitter" placeholder="Twitter"><br>
+            <!-- <label >Profile-pic:</label>
+            <input type="file" id="profile-pic" name="profile-pic"><br> -->
+            <div id="new_chq"></div>
+<input type="hidden" value="1" id="total_chq">
+<div id="new_chqq"></div>
+<input type="hidden" value="1" id="total_chqq">
+
+            <input type="submit" class="btn" value="submit" >
+            <input type="reset" class="btn" value="Reset">
+            <h5 style="padding-top: 20px;padding-left: 47%;padding-bottom: 20px;" class="home"><a style="color: white;" href="file:///C:/Users/2017t/Documents/web%20development/final/frontpage.html#">Back to Home &#8617</a></h5>
+
+
+        </form>
+        </div>
+        
+    </div>
+  </div>
+
+  <script>
+  $('.add').on('click', add);
+$('.remove').on('click', remove);
+
+function add() {
+  var new_chq_no = parseInt($('#total_chq').val()) + 1;
+  var new_input = "<input type='text' name='new_" + new_chq_no + "'><br>";
+
+  $('#multiproject').append(new_input);
+
+  $('#total_chq').val(new_chq_no);
+}
+
+function remove() {
+
+  var last_chq_no = $('#total_chq').val();
+
+  if (last_chq_no > 1) {
+    $('input[name="new_'+ last_chq_no +'"]').remove();
+    $('#total_chq').val(last_chq_no - 1);
+  }
+}
+$('.add1').on('click', add1);
+$('.remove1').on('click', remove1);
+
+function add1() {
+  var new_chq_no = parseInt($('#total_chqq').val()) + 1;
+  var new_input = "<input type='text' name='skill_" + new_chq_no + "'><br>";
+
+  $('#multiskill').append(new_input);
+
+  $('#total_chqq').val(new_chq_no);
+}
+
+function remove1() {
+
+  var last_chq_no = $('#total_chqq').val();
+
+  if (last_chq_no > 1) {
+    $('input[name="skill_'+ last_chq_no +'"]').remove()
+    $('#total_chqq').val(last_chq_no - 1);
+  }
+}
+
+
+  </script>
+</body>
+</html>

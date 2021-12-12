@@ -1,0 +1,283 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+    <title>Dark Mode</title> 
+    <link rel="stylesheet" href="C:\Users\hp\Desktop\pcode\views\style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> 
+	</script> 
+	
+	<style>  
+		.mode { 
+            float:right;
+            padding-top: 10px; 
+		} 
+		.change { 
+			cursor: pointer; 
+			border: 1px solid #555; 
+			border-radius: 40%; 
+			width: 20px; 
+			text-align: center; 
+			padding: 5px; 
+			margin-left: 8px; 
+		} 
+		.dark{ 
+			background-color: #222; 
+			color: #e6e6e6; 
+    } 
+    body{
+    margin: 0;
+    text-align: center;
+    color: #40514e;
+}
+h1{
+    margin: 0;
+    font-size: 5.25rem;
+    color: #66bfbf;
+    margin: 50px auto 0px auto;
+    font-family: 'Sacramento', cursive;
+}
+h2{
+    font-weight: normal;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    color: #66bfbf;
+}
+h3{
+    color: #66bfbf;
+}
+.top-container
+{
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+    
+}
+.middle-container{
+    margin: 100px 0px 100px 0px;
+}
+.bottom-container{
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+}
+p{
+    line-height: 2;
+}
+.intro{
+    width: 30%;
+    margin: auto;
+}
+hr{
+    border:dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto 50px auto;
+}
+a{
+    color: #11999E;
+    margin: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #EAF6F6;
+}
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+
+}
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.edu-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+
+}
+.exp-row{
+     width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.project-row{
+     width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.aboutme{
+     width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.profile{
+    padding-bottom: 20px;
+}
+.contact-msg{
+    width: 40%;
+    margin: 40px auto 60px auto;
+}
+.copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+}
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+    text-decoration: none;
+  }
+#clg{
+    line-height: 1
+}
+#clgyear{
+    line-height: 1
+}
+#lop{
+    margin: auto
+}
+	</style> 
+</head> 
+
+<body> 
+	
+    <div class="top-container">
+        <img class="top-cloud" src="https://www.linkpicture.com/q/cloud_2.png" alt="cloud">
+        <% room.forEach(function(sg){  %>   
+    <h1>I'm <%= sg.firstname %></h1>
+    <h2 name="oneword">a creator</h2>
+    <img class="bottom-cloud" src="https://www.linkpicture.com/q/cloud_2.png" alt="cloud">
+    <img src="https://www.linkpicture.com/q/mountain_1.png" alt="mountain">
+    </div>
+    <div class="mode"> 
+        Dark mode:			 
+        <span class="change">OFF</span> 
+    </div>
+    <div class="middle-container">
+              <div class="profile">
+        <img class="profile" src="<%= sg.profile %>" alt="" width="200" height="200">
+        <h2>Hello</h2>
+        <p class="intro"><%= sg.tagline %></p>
+      </div>
+      <hr>
+        <div class="education">
+        <h2>My Education</h2>
+        <div class="edu-row">
+          
+            <h3 ><%= sg.degree %></h3>
+            <p id="clg"><%= sg.college %><br><br><%= sg.startyear %>-<%= sg.endyear %></p>
+            
+        </div>
+        
+      </div>
+        <hr>
+      <div class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-row">
+          
+          <h3><%= sg.domain %></h3>
+          <p><%= sg.aboutdomain %></p>
+        </div>
+        <!-- <div class="skill-row">
+         
+          <h3>web-development</h3>
+          <p>I'm a front end web developer.I have knowledge of html , css , bootstrap , React js , javascript.</p>
+        </div> -->
+      </div>
+      <hr>
+        <div class="exp">
+        <h2>My Experience</h2>
+        <div class="exp-row">
+          <h3><%= sg.title %> </h3>
+          <h3><%= sg.company %><br> [<%= sg.startdate %>-<%= sg.enddate %> ]</h3>
+          <p><%= sg.aboutexperience %></p>
+        </div>
+        
+      </div>
+        <hr>
+        <div class="projects">
+        <h2>My Projects</h2>
+        <div class="project-row">
+          
+          <h3><%= sg.ptitle %></h3>
+          <p><%= sg.aboutproject %></p>
+            <a id="lop" href="" >Link of Project</a>
+        </div>
+        
+      </div>
+        <hr>
+        <div class="summary">
+        <h2>About me</h2>
+        <div class="aboutme">
+          
+          
+          <p><%= sg.summary %></p>
+        </div>
+        </div>    
+         
+        <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you want to contact me</h3>
+        <p class="contact-msg">Any doubts or suggestions regarding my website, please feel free to send message via mail by clicking on contact-me button below.</p>
+        <a class="btn" href="mailto:<%= sg.email %>">CONTACT ME</a>
+      </div>
+      
+    </div>
+    
+    
+    <div class="bottom-container">
+      <a class="footer-link" href="<%= sg.linkedin %>">LinkedIn</a>
+      <a class="footer-link" href="<%= sg.github %>">Github</a>
+      <p class="copyright">© 2020 parin_quartet.</p>
+    </div>
+    <%})%>
+	<script> 
+		$( ".change" ).on("click", function() { 
+			if( $( "body" ).hasClass( "dark" )) { 
+				$( "body" ).removeClass( "dark" ); 
+				$( ".change" ).text( "OFF" ); 
+			} else { 
+				$( "body" ).addClass( "dark" ); 
+				$( ".change" ).text( "ON" ); 
+			} 
+		}); 
+	</script> 
+</body> 
+
+</html> 
